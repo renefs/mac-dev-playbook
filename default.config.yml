@@ -2,72 +2,91 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_sudoers: no
+configure_terminal: no
+configure_osx: no
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/renefs/devconfig.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Projects/dotfiles
 dotfiles_files:
-  - .bash_profile
-  - .gitignore
-  - .inputrc
+  - .zshrc
   - .osx
   - .vimrc
 
-homebrew_installed_packages:
+homebrew_installed_packages: []
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
-  - wget
-  - wrk
+  # - autoconf
+  # - bash-completion
+  # - doxygen
+  # - gettext
+  # - gifsicle
+  # - git
+  # - go
+  # - gpg
+  # - hub
+  # - httpie
+  # - iperf
+  # - libevent
+  # - sqlite
+  # - mcrypt
+  # - nmap
+   - node
+   - nvm
+  # - php
+  # - ssh-copy-id
+  # - cowsay
+  # - readline
+  # - openssl
+  # - pv
+  # - wget
+  # - wrk
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
+  - caskroom/versions
+
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - appcleaner
+  - calibre
   - chromedriver
+  - dash
+  - dropbox
   - docker
   - dropbox
   - firefox
+  - gas-mask
+  - github
   - google-chrome
   - handbrake
-  - licecap
-  - limechat
-  - macvim
-  - sequel-pro
-  - skitch
-  - slack
+  - iterm2
+  - opera
+  - plex-media-server
+  - pgadmin4
+  - poedit
+  - postman
+  - protonvpn
+  - skype
+  - spotify
+  - steam
   - sublime-text
-  - transmit
-  - vagrant
+  - subtitles
+  - tomighty
+  - transmission
+  - transmit4
+  - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 443987910, name: "1Password" }
+  - { id: 497799835, name: "Xcode" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 585829637, name: "Todoist" }
 mas_email: ""
 mas_password: ""
 
