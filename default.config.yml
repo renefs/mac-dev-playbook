@@ -11,36 +11,43 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Projects/dotfiles
 dotfiles_files:
   - .zshrc
-  - .osx
+  - .osx.sh
   - .vimrc
 
-homebrew_installed_packages: []
+homebrew_installed_packages:
   # - ansible # Installed via Pip.
   # - autoconf
   # - bash-completion
+  - codeclimate
   # - doxygen
-  # - gettext
+  - gettext
   # - gifsicle
-  # - git
+  - git
   # - go
   # - gpg
   # - hub
   # - httpie
   # - iperf
   # - libevent
-  # - sqlite
+  - sqlite
   # - mcrypt
   # - nmap
-   - node
-   - nvm
+  - node
+  - nvm
   # - php
   # - ssh-copy-id
   # - cowsay
   # - readline
-  # - openssl
+  - openssl
   # - pv
+  - postgresql
+  - python3
+  - rbenv
+  - sshpass
+  - watchman
   # - wget
   # - wrk
+  - zsh-syntax-highlighting
 
 homebrew_taps:
   - homebrew/core
@@ -64,20 +71,26 @@ homebrew_cask_apps:
   - handbrake
   - iterm2
   - opera
+  - parallels12
+  - parallels-toolbox
   - plex-media-server
   - pgadmin4
   - poedit
   - postman
   - protonvpn
+  - pycharm
   - skype
   - spotify
   - steam
   - sublime-text
   - subtitles
+  - telegram
   - tomighty
   - transmission
   - transmit4
   - vlc
+  - visual-studio-code
+  - webstorm
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -87,10 +100,12 @@ mas_installed_apps:
   - { id: 409203825, name: "Numbers" }
   - { id: 409183694, name: "Keynote" }
   - { id: 585829637, name: "Todoist" }
+  - { id: 715768417, name: "Microsoft Remote Desktop" }
+  - { id: 408981434, name: "iMovie" }
 mas_email: ""
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.osx.sh --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
@@ -99,10 +114,9 @@ composer_packages: []
   # - name: drush
   #   state: present # present/absent, default: present
   #   version: "^8.1" # default: N/A
-gem_packages: []
-  # - name: bundler
-  #   state: present # present/absent/latest, default: present
-  #   version: "~> 1.15.1" # default: N/A
+gem_packages:
+  - name: travis
+    state: present # present/absent/latest, default: present
 npm_packages: []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
