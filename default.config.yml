@@ -71,8 +71,6 @@ homebrew_cask_apps:
   - handbrake
   - iterm2
   - opera
-  - parallels12
-  - parallels-toolbox
   - plex-media-server
   - pgadmin4
   - poedit
