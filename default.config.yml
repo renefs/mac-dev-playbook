@@ -20,6 +20,7 @@ homebrew_installed_packages:
   # - bash-completion
   - codeclimate
   # - doxygen
+  - ffmpeg
   - gettext
   # - gifsicle
   - git
@@ -58,7 +59,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - appcleaner
-  - calibre
+  - balsamiq-mockups
   - chromedriver
   - dash
   - dropbox
@@ -70,8 +71,9 @@ homebrew_cask_apps:
   - google-chrome
   - handbrake
   - iterm2
+  - mattermost
+  - mysqlworkbench
   - opera
-  - plex-media-server
   - pgadmin4
   - poedit
   - postman
@@ -84,8 +86,8 @@ homebrew_cask_apps:
   - subtitles
   - telegram
   - tomighty
-  - transmission
   - transmit4
+  - trello
   - vlc
   - visual-studio-code
   - webstorm
@@ -98,8 +100,6 @@ mas_installed_apps:
   - { id: 409203825, name: "Numbers" }
   - { id: 409183694, name: "Keynote" }
   - { id: 585829637, name: "Todoist" }
-  - { id: 715768417, name: "Microsoft Remote Desktop" }
-  - { id: 408981434, name: "iMovie" }
 mas_email: ""
 mas_password: ""
 
@@ -115,7 +115,8 @@ composer_packages: []
 gem_packages:
   - name: travis
     state: present # present/absent/latest, default: present
-npm_packages: []
+npm_packages:
+  - name: create-react-app
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
