@@ -117,6 +117,7 @@ gem_packages:
     state: present # present/absent/latest, default: present
 npm_packages:
   - name: create-react-app
+  - name: create-react-native-app
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
