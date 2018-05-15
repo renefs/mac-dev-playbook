@@ -18,7 +18,6 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   # - autoconf
   # - bash-completion
-  - codeclimate
   # - doxygen
   - ffmpeg
   - gettext
@@ -45,6 +44,7 @@ homebrew_installed_packages:
   - python3
   - rbenv
   - sshpass
+  - travis
   - watchman
   # - wget
   # - wrk
