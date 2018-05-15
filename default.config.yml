@@ -16,7 +16,6 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - codeclimate
   - gettext
   - git
   - sqlite
@@ -28,6 +27,7 @@ homebrew_installed_packages:
   - python3
   - rbenv
   - sshpass
+  - travis
   - watchman
   - zsh-syntax-highlighting
 
