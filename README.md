@@ -42,9 +42,13 @@ You can override any of the defaults configured in `default.config.yml` by creat
 
     mas_installed_apps:
       - { id: 443987910, name: "1Password" }
-      - { id: 498486288, name: "Quick Resizer" }
-      - { id: 557168941, name: "Tweetbot" }
       - { id: 497799835, name: "Xcode" }
+      - { id: 409201541, name: "Pages" }
+      - { id: 409203825, name: "Numbers" }
+      - { id: 409183694, name: "Keynote" }
+      - { id: 585829637, name: "Todoist" }
+      - { id: 715768417, name: "Microsoft Remote Desktop" }
+      - { id: 408981434, name: "iMovie" }
 
     composer_packages:
       - name: hirak/prestissimo
