@@ -16,37 +16,19 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  # - autoconf
-  # - bash-completion
   - codeclimate
-  # - doxygen
   - gettext
-  # - gifsicle
   - git
-  # - go
-  # - gpg
-  # - hub
-  # - httpie
-  # - iperf
-  # - libevent
   - sqlite
-  # - mcrypt
-  # - nmap
   - node
   - nvm
-  # - php
-  # - ssh-copy-id
-  # - cowsay
-  # - readline
+  - ssh-copy-id
   - openssl
-  # - pv
   - postgresql
   - python3
   - rbenv
   - sshpass
   - watchman
-  # - wget
-  # - wrk
   - zsh-syntax-highlighting
 
 homebrew_taps:
