@@ -26,7 +26,6 @@ homebrew_installed_packages:
   - postgresql
   - python3
   - rbenv
-  - sshpass
   - travis
   - watchman
   - zsh-syntax-highlighting
