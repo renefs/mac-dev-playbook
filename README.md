@@ -37,8 +37,7 @@ You can override any of the defaults configured in `default.config.yml` by creat
 
     homebrew_installed_packages:
       - cowsay
-      - git
-      - go
+      - travis
 
     mas_installed_apps:
       - { id: 443987910, name: "1Password" }
